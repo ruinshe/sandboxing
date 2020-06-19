@@ -20,4 +20,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt-get install -y texlive-full && apt-get install -y latex-cjk-chinese && \
     rm -rf /var/lib/apt/lists/* /tmp/*
 
+# CTAN
+RUN tlmgr option repository https://mirrors.aliyun.com/CTAN/systems/texlive/tlnet
+
 CMD ["/bin/zsh"]
