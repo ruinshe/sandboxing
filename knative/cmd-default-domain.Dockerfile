@@ -1,0 +1,2 @@
+FROM gcr.io/knative-releases/knative.dev/serving/cmd/default-domain@sha256:044e13ed1390f30075c519d4cf4e67c11bfb40ffbd85bfa54b99b588970cdcce
+MAINTAINER ruinshe
